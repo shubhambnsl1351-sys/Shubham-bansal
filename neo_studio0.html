@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEO STUDIO - Graphic Designer</title>
+    <style>
+        /* Basic Styling and Grey Theme */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            /* Dark grey background for the theme */
+            background-color: #1a1a1a; 
+            color: #cccccc; /* Light grey text */
+        }
+
+        /* Header (for Logo and Navigation) */
+        header {
+            background-color: #2c2c2c; /* Slightly lighter grey for contrast */
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed; /* Keeps the header at the top */
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .logo {
+            /* Your logo should be a small image in the corner */
+            width: 50px; 
+            height: 50px;
+            border-radius: 50%; /* Optional: make it round */
+            object-fit: cover;
+        }
+
+        nav a {
+            color: #cccccc;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+        }
+
+        /* Main Content Styling */
+        main {
+            padding-top: 80px; /* Offset for fixed header */
+        }
+
+        section {
+            padding: 40px 5%;
+            margin-bottom: 20px;
+        }
+
+        h1, h2 {
+            color: #e0e0e0; /* Very light grey for headings */
+            text-align: center;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+
+        /* Hero Section (Introduction) */
+        #hero {
+            text-align: center;
+            padding: 100px 5%;
+            background: linear-gradient(to bottom, #1a1a1a, #333333);
+        }
+        
+        #hero h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        #hero p {
+            font-size: 1.2em;
+            color: #999999;
+        }
+
+        /* Portfolio Section */
+        #portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 0 5%;
+        }
+
+        .portfolio-item {
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+            background-color: #333333;
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Contact Section and Footer */
+        #contact {
+            text-align: center;
+            background-color: #2c2c2c;
+        }
+
+        #contact a {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #555555;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        #contact a:hover {
+            background-color: #777777;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #0d0d0d;
+            font-size: 0.9em;
+            color: #777777;
+        }
+        
+        /* 🔥 FIX FOR MOBILE VIEW: Centering and spacing the links 🔥 */
+        @media (max-width: 600px) {
+            header {
+                /* Adjust header padding for smaller screens */
+                padding: 15px 15px; 
+            }
+
+            .logo {
+                /* Reduce logo size slightly */
+                width: 40px; 
+                height: 40px;
+            }
+
+            nav {
+                /* Make nav a flex container */
+                display: flex;
+                
+                /* Center the links horizontally inside the nav container */
+                justify-content: center;
+                
+                /* Allow nav to take up all available horizontal space */
+                flex-grow: 1; 
+                
+                /* Use negative margin to visually balance the space lost to the logo */
+                margin-left: -10px;
+            }
+
+            nav a {
+                /* Use padding to create space around links and reset margin */
+                padding: 0 5px; 
+                margin: 0;
+                font-size: 0.9em; 
+            }
+        }
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="1759402001643.png" alt="NEO STUDIO Logo" class="logo">
+        <nav>
+            <a href="#hero">Home</a>
+            <a href="#portfolio">portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>NEO STUDIO</h1>
+            <p>Creative & Professional Graphic Design Solutions</p>
+            <p>Let's bring your vision to life.</p>
+        </section>
+
+        <section id="portfolio">
+            <h2>OUR PORTFOLIO</h2>
+            <div id="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="00000.png" alt="NEO STUDIO Promotional Post">
+                </div>
+         
+                <div class="portfolio-item">
+                    <img src="1759402001643.jpg" alt="NEO STUDIO Logo Design">
+                </div>
+                
+                <div class="portfolio-item">
+                    <img src="1759402001644.png" alt="NEO STUDIO Business Card">
+                </div>
+
+                <div class="portfolio-item">
+                    <img src="1759402001645.png" alt="NEO STUDIO Service Ad">
+                </div>
+            </div>
+            
+            <h2>WORK</h2>
+            <div id="portfolio-grid">
+                
+                <div class="portfolio-item">
+                    <img src="1759402001644.jpg.png" alt="NEO STUDIO Logo Design">
+                </div>
+
+                <div class="portfolio-item">
+                    <img src="12099.JPG" alt="NEO STUDIO Promotional Post">
+                </div>
+
+                <div class="portfolio-item">
+                    <img src="" alt="NEO STUDIO Business Card">
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Get in Touch</h2>
+            <p>Ready to start your project? Connect with us on Instagram!</p>
+            
+            <a href="https://www.instagram.com/neo_studio0?igsh=MWI5NXNrb3Y3N2Jkdw==" target="_blank" aria-label="Follow us on Instagram">
+                Connect on Instagram
+            </a>
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 NEO STUDIO. All rights reserved.</p>
+        <p>Graphic Design Portfolio</p>
+    </footer>
+
+</body>
+</html>
